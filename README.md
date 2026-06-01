@@ -1,98 +1,37 @@
-# Task 1: BERT News Classifier
-
-## Problem Statement
-
-News websites publish a huge number of articles every day. Manually organizing news into categories is difficult and time-consuming.
-
-This project uses BERT to automatically classify news headlines into topic categories.
-
----
+# Task 1: News Topic Classifier Using BERT
 
 ## Objective
 
-Build a transformer-based text classification model using BERT and classify news headlines into categories using Natural Language Processing (NLP).
-
-Evaluate model performance using:
-- Accuracy
-- F1 Score
-
----
-
-## Dataset Used
-
-Dataset Name:
-AG News Dataset
-
-Source:
-Hugging Face Datasets
-
-Categories:
-- World
-- Sports
-- Business
-- Science / Technology
-
----
+The objective of this project is to classify news headlines into predefined categories using the BERT transformer model. The model is fine-tuned on the AG News dataset to automatically identify the topic of a news article.
 
 ## Methodology / Approach
 
-### Step 1 — Dataset Loading
-Loaded AG News dataset using Hugging Face.
+* Loaded the AG News dataset using Hugging Face Datasets.
+* Performed text preprocessing and tokenization using BERT Tokenizer.
+* Fine-tuned the pre-trained BERT model (bert-base-uncased) for text classification.
+* Trained the model using Hugging Face Trainer API.
+* Evaluated the model using Accuracy and F1-Score.
+* Tested the model on unseen news headlines.
 
-### Step 2 — Text Preprocessing
-- Tokenization
-- Padding
-- Truncation
+## Key Results / Observations
 
-### Step 3 — Model Development
-Loaded pre-trained BERT model.
-
-Model:
-- bert-base-uncased
-
-### Step 4 — Model Training
-Fine-tuned BERT using Trainer API.
-
-### Step 5 — Evaluation
-Measured performance using:
-- Accuracy
-- F1 Score
-
-### Step 6 — Prediction
-Tested model using sample news headlines.
-
----
+* Successfully fine-tuned a transformer-based model for news classification.
+* Achieved strong classification performance on the AG News dataset.
+* Demonstrated the effectiveness of transfer learning for NLP tasks.
+* Learned practical implementation of tokenization, fine-tuning, and model evaluation.
 
 ## Technologies Used
 
-- Python
-- Transformers
-- Hugging Face
-- NumPy
-- Google Colab
-
----
+* Python
+* Hugging Face Transformers
+* Datasets Library
+* PyTorch
+* Scikit-learn
 
 ## Skills Gained
 
-- NLP
-- Transformers
-- Transfer Learning
-- Fine-Tuning
-- Text Classification
-- Model Evaluation
-
----
-
-## Results / Observations
-
-- Successfully implemented news classification
-- Learned tokenization and preprocessing
-- Fine-tuned transformer model
-- Evaluated using classification metrics
-
----
-
-## Conclusion
-
-This project demonstrated how BERT can be fine-tuned for news topic classification using transformer-based NLP techniques.
+* Natural Language Processing (NLP)
+* Transformer Models
+* BERT Fine-Tuning
+* Text Classification
+* Model Evaluation
